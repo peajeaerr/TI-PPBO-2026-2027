@@ -7,10 +7,10 @@ public class LatihanClass {
         m1.setIpk(3.8); // valid
         System.out.println("IPK sekarang: " + m1.getIpk());
 
-        // Memaksa sistem mencetak teks di atas sebelum lanjut ke baris berikutnya
+
         System.out.flush();
 
-        m1.setIpk(9.9); // tidak valid, akan ditolak
+        m1.setIpk(9.9);
         System.out.println("IPK sekarang: " + m1.getIpk());
     }
 }
