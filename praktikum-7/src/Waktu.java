@@ -50,7 +50,7 @@ public class Waktu {
         }
     }
 
-    // Method pembantu untuk cetak waktu rapi
+    // Method untuk cetak waktu rapi
     public void tampilkanWaktu() {
         System.out.printf("Waktu sekarang: %02d:%02d:%02d\n", jam, menit, detik);
     }
@@ -65,13 +65,11 @@ public class Waktu {
         w.setDetik(45);
         w.tampilkanWaktu();
 
-        // Uji coba nilai tidak valid (akan ditolak)
+        // Uji coba nilai tidak valid
         System.out.println("\n=== UJI DATA TIDAK VALID ===");
         w.setJam(25);
         w.setMenit(-5);
         w.setDetik(61);
-
-        // Memastikan nilai tidak berubah dari data valid sebelumnya
         w.tampilkanWaktu();
     }
 }
